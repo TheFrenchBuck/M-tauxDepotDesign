@@ -1,2 +1,2 @@
-# M-tauxDepotDesign
+# MetauxDepotDesign
 Design Refonte site web
