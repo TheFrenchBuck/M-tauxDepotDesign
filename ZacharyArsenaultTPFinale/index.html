@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "normalize" type = "text/css" href = "css/normalize.css">
+    <link rel = "stylesheet" type = "text/css" href = "css/style-main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+
+    <title>Metaux_Dépôt</title>
+</head>
+<body>
+    <header>
+        <div class='imageAccueil'><img src="images/imagemenue.Usineai.png"></div>
+         <h1>Métaux-Dépot</h1>
+        <div class='logo'>
+        <a href="index.html" title="lienAceille"><img src="images/imageLogo.png" alt="Metaux_Dépôt" class="logo"></a>
+        
+        </div>
+       
+    </header>
+
+    <main>
+    <section class="choixNav">
+    <a href="#news"><div class="actualite">Actualiter</div></a>
+    <a href="#nousJoindre"><div class="nousJoindre">NousJoindre</div></a>
+    <a href="#sectprix"><div class="prix">Prix</div></a>
+    <a href="#recyclage"><div class="recyclage">Recyclage</div></a>
+   
+    </section>
+
+    <section class="description">
+        <div>Métaux Dépôt</div>
+        <p>Métaux Dépôt est un meneur local dans le recyclage du métal. Nous achetons de petites et de grandes quantités de ferraille dans notre location moderne et entièrement pavée. Un service personnalisé et serviable, de bons prix et un accès facile par la voie de service de l’autoroute 40 et des innovations constantes, nous ont gardés à l’avant-plan dans le secteur du recyclage de métaux à Montréal.
+
+        De plus, étant partenaire avec AIM; un des meneurs mondiaux dans le recyclage, nous permet d’avoir accès aux marchés mondiaux et d’être a la fine pointe technologique.
+
+        Visitez notre site internet pour en apprendre plus ou vous pouvez communiquer avec nous pour de plus amples informations.</p>
+    </section>
+    
+    
+
+
+
+
+
+
+    
+
+    <section id="news" class="actualite">
+    <img src="images/news.png" class="imageNews">
+    <div class="galerie">
+        <div><img src="images/goldactualité.jpg"></div>
+        <div><img src="images/dechet.jpg" ></div>
+        <div><img src="images/forex.jpg" ></div>
+  
+    </div>
+    </section>
+    <section id="sectprix" class="sectprix">
+    <img src="images/BackgroundPRix.png" class="imagePrix">
+        
+        <div class="btnsctprix">
+            
+            <div >Non Ferreux </div>
+            <div class="ferreux" id="ferreux">Ferreux</div>
+            <div class="listeMateriaux" id="listeMateriaux">
+                <ul>Matériaux
+                   
+                    <li>Acier #1</li>
+                    <li>Acier #1 O/S</li>
+                    <li>Acier Mélangé</li>
+                    <li>ACIER O/S TORSHING</li>
+                    <li>ACIER TURNING</li>
+                    <li>Auto</li>
+                    <li>AUTOMOBILE SANS MOTEUR</li>
+                    <li>Busheling #1 et #2</li>
+                    <li>Discs & Drums</li>
+                    <li>Fonte de Fer #1 et #2</li>
+                </ul>
+                <ul class="ulprix">Prix
+                    <li>$150.00</li>
+                    <li>$115.00</li>
+                    <li>$140.00</li>
+                    <li>$105.00</li>
+                    <li>$105.00</li>
+                    <li>$125.00</li>
+                    <li>$90.00</li>
+                    <li>$150.00</li>
+                    <li>$200.00</li>
+                    <li>$140.00</li>
+                </ul>
+                
+                
+                
+            </div>
+            <div>Recyclage</div>
+        </div>
+        
+            <h2>Nos Prix</h2>
+           
+    </section>
+    
+    
+    </main>
+    
+    <footer>
+
+        <div class="adresse">
+            <div>10301 Métropolitain E. Montréal, Québec</div>
+            <div>Tél: (514) 648-8602</div>
+            <div>Fax: (514) 648-6283</div>
+            <div>© Zachary Arsenault</div>
+        </div>
+        
+        <div class="reseauSocial">
+            <div><img src="images/fb.png" class="facebook"></div>
+            <div><img src="images/Twitter2.png" class="twitter"></div>
+            <div><img src="images/youtube2.png" class="youtube"></div>
+        </div>
+       
+
+
+    </footer>
+
+
+    
+
+    
+
+   
+   
+    
+
+
+
+
+</body>
+</html>
+<script>
+
+let box = document.getElementById('listeMateriaux'),
+    btn = document.getElementById('ferreux');
+
+btn.addEventListener('click', function () {
+  box.classList.toggle('hidden');
+  box.classList.toggle('visuallyvisible');
+}, false);
+
+
+</script>

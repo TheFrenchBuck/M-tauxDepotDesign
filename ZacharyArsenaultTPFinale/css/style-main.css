@@ -1,0 +1,525 @@
+
+/* ===========================Paramètre Globaux============================*/
+html {
+  scroll-behavior: smooth;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    
+    }
+
+header{
+ 
+    background-image: url("../images/imagemenueBackgroumd.png");
+    background-repeat: no-repeat;
+
+    width: 100%;
+    
+    /* overflow: hidden; */
+    height: 345px;
+    display: flex;
+    flex-direction: row;
+    text-align: end;    
+}
+  .logo{
+  /* position:absolute; */
+  position:fixed;
+
+  
+  
+    right: 2%;
+    top: 2%;
+    /* hauteur image de base
+     width: 266px;
+     height: 198px; */
+     width:133px;
+     height:99px;
+    z-index: 9999;
+}
+
+
+  header div .logo img {
+    opacity: 0.7;
+    width: 133px;
+    height: 99px;
+  }
+  .imageAccueil{
+      z-index: 2;
+      padding: auto;
+  }
+     
+      
+       h1{
+        align-self: end;
+        font-size: 3em;
+        font-family: 'Saira Stencil One', cursive;
+    
+        
+  }
+  main{
+
+      background-image: url('../images/image-terre\ copie.png');
+      
+      
+      background-repeat: no-repeat;
+    
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+
+     
+      
+     
+
+
+  }
+  section{
+      height: 100vh;
+  }
+  .description{
+      
+      width: 50%;
+      padding: 2%;
+       margin: 0  auto 1% auto; 
+      background-image: url('../images/alum.jpg');
+      font-size: 1.5em;
+      background-color: rgba(192, 192, 192,0.4);
+      height: auto;
+      box-shadow: 10px 21px 17px 10px rgba(31, 31, 31, 0.356);
+      font-weight: 200;
+
+     
+
+
+  }
+  .description p{
+    background-color: rgba(192, 192, 192,0.6);
+    border-radius: 0%;
+    /* border:solid rgba(192, 192, 192,0.4) 2px; */
+    overflow-wrap: break-word;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+
+  }
+  .description div{
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: #005803 ;
+    font-size: 2em;
+  }
+
+  .choixNav{
+    
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-gap: 5%;
+    margin: 5%  auto 5% auto; 
+    height: auto;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: 'Saira Stencil One', cursive;
+  }
+
+
+  .choixNav div{
+    
+      background-color: rgba(23 ,197 , 4 , 0.35);
+      width:6em;
+      text-align:  center;
+      border-radius: 10%;
+      box-shadow: 5px 10px 9px  rgba(43, 44, 43, 0.493);
+  }
+  .choixNav a{
+    text-decoration: none;
+    color: white;
+  }
+  .nousJoindre{
+      grid-row: 1 / 2;
+      grid-column: 1 / 2;
+  }
+  .prix{
+    grid-row: 1 / 2;
+      grid-column: 2 / 3;
+  }
+  .recyclage{
+    grid-row: 1 / 2;
+      grid-column: 3 / 4;
+
+  }
+  .apropos{
+    grid-row: 1 / 2;
+    grid-column: 4 / 5;
+
+  }
+  .actualite{
+    text-align: center;
+    height: auto;
+    
+
+  }
+  
+  .imageNews{
+    max-width: 500px;
+
+  }
+  .galerie{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 5%;
+    
+  }
+
+
+
+
+
+  /*================section Prix============*/
+
+
+
+
+
+
+
+
+  .sectprix{
+    height: auto;
+      background-color: rgba(183, 205, 213, 1);
+      /* height: 920px; */
+      /* height: auto; */
+      display: flex;
+      flex-direction: column-reverse;
+      padding-top: 2.5%;
+      padding-bottom: 5%;
+      
+      }
+
+  .sectprix h2{
+    font-size: 4rem;
+    font-family: 'Saira Stencil One', cursive;
+    color: rgba(88, 116, 53, 1);
+    background-color: rgba(203, 203, 203, 0.65);
+    text-align:  center;
+    border-radius: 10%;
+    width: 25%;
+    margin: auto;
+    border: solid rgba(97, 97, 97, 0.699) 1px;
+    margin-bottom: 2.5%;
+
+  }
+  .imagePrix{
+    min-width: 201px;
+    max-width: 301px;
+    margin: auto;
+    transform: translateY(20%);
+
+  }
+  
+  .btnsctprix{
+    display: flex;
+    flex-direction: row;
+    font-size: 2rem;
+    font-family: 'Saira Stencil One', cursive;
+    width: 70%;
+    justify-content: space-between;
+    margin: auto;
+      
+  }
+  .btnsctprix div{
+    background-color: rgba(23 ,197 , 4 , 0.35);
+    width:18%;
+    text-align:  center;
+    border-radius: 10%;
+    box-shadow: 5px 10px 9px  rgba(43, 44, 43, 0.493);
+    z-index: 100;
+    margin: auto;
+    padding: 1%;
+  }
+  .btnsctprix div:active{
+    background-color: #41a744de;
+    box-shadow: 0 5px #666;
+    transform: translateY(5px)
+  }
+
+  
+  .sectprix h2{
+    width: 80%;
+    font-size: 3rem;
+  }
+
+  .listeMateriaux{
+    display: flex;
+    flex-direction: row;
+    overflow-y:scroll;
+    overflow-x: hidden;
+    width: 30%;
+    padding: 1%;
+    text-align: center;
+    display: none;
+    margin: 0 auto 0 auto;
+    justify-content: space-around;
+    position:relative;    
+    z-index: 3;
+    transition: all 2.3s linear;
+    display: none;
+    
+  }
+  .visuallyvisible{
+    display: flex;
+  }
+  .listeMateriaux ul{
+    list-style: none;
+    font-size: 1rem;
+    height: 200px;
+    margin: none;
+    text-align: start;
+    padding: none;
+   
+    
+    
+  }
+  .ulprix{
+    margin-right: 10%;
+
+  }
+  .listeMateriaux li{
+    margin: 2em 0 2em 0;
+    font-size: 0.5rem;
+    
+    
+  }
+
+  .listeMateriaux.div{
+    
+    height: 50px;
+    padding: none;
+
+
+  }
+ 
+  .listenom{
+    width: 100%;
+
+  }
+  footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: dimgrey;
+    padding: 1em 2em 1em 2em;
+  }
+  footer div{
+  width: 33%;
+  }
+  .adresse{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 0;
+  }
+  .adresse :first-child{
+    width: auto;
+  }
+  .reseauSocial{
+    display: flex;
+    justify-content: flex-end;
+  }
+.reseauSocial div img{
+    height: 52px;
+    width: 52px;
+  }
+  
+
+
+ 
+
+
+
+
+/* ============================Tablette============================*/
+  @media (min-width: 625px) and (max-width: 768px){
+    .choixNav{
+      width: 100%;
+      margin: 10%  auto 10% auto;
+      height: 200px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr); 
+      font-size: 1.5rem;
+     
+     
+    }
+    .choixNav a{
+      margin: auto;
+    }
+    .actualite,.nousJoindre,.prix,.recyclage{
+      
+      padding: 1em;
+    }
+
+
+
+    .adresse{
+      font-size: 17px;
+      }
+      .adresse div{
+        width: 100%;
+        
+      }
+      .reseauSocial div img{
+        width: 60px;
+        height: 60px;
+      
+      }
+      .imagePrix{
+        margin-bottom: 20%;
+      }
+      .btnsctprix{
+        flex-direction: column;
+      }
+      
+      .btnsctprix div{
+        
+        margin-top: 5%;
+        z-index: 2;
+        width: 70%;
+      
+      }
+      .listeMateriaux ul{
+        list-style: none;
+        font-size: 2rem;
+        height: 200px;
+        margin: none;
+        text-align: start;
+        padding: none;
+       
+        
+        
+      }
+      .listeMateriaux li{
+        font-size: 1rem;
+      }
+      
+     
+      
+}
+/* ============================Mobile============================*/
+@media (max-width: 576px) {
+  .logo{
+    /* position:absolute; */
+    position:fixed;
+  
+    
+    
+      right: 55%;
+      top: 50%;
+      /* hauteur image de base
+       width: 266px;
+       height: 198px; */
+       width:133px;
+       height:99px;
+      z-index: 9999;
+  }
+  .description{
+    width: 90%;
+    
+  }
+  .description p{
+    font-size: 1rem;
+  }
+ 
+  .imageAccueil{
+    width: 100%;
+    display:  flex;
+    align-items: flex-end;
+
+ }
+ /* ----------- main ----------*/
+ main{
+   padding-top: 5%;
+ }
+ .choixNav div{
+   margin: auto;
+   font-size: 1.75rem;
+ }
+ .imageAccueil img{
+  max-width: 202%;
+margin-bottom: 25%;
+
+ }
+ h1{
+   z-index: 2;
+ }
+ 
+ .logo{
+  right:32%;
+  top: 5%;
+  
+ }
+ .choixNav{
+   width: 100%;
+   margin: 1%  auto 1% auto;
+   height: 200px;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(2, 1fr); 
+   font-size: 2rem;
+  
+  
+ }
+ .galerie div img{
+  max-width: 200px;
+ }
+ .imageNews{
+  max-width: 250px;
+  padding-bottom: 5%;
+
+}
+.btnsctprix{
+  flex-direction: column;
+}
+
+.btnsctprix div{
+  font-size: 2rem;
+  margin-top: 5%;
+  z-index: 2;
+  width: 70%;
+
+}
+.imagePrix{
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+
+/*-------footer---------*/
+footer{
+  /* justify-content: space-around; */
+  justify-content: flex-start;
+}
+footer div{
+  justify-content: flex-start;
+  width: 50%;
+  padding-left: 0 0 0 0;
+}
+.adresse{
+  font-size: 12px;
+  }
+  .adresse div{
+    width: 100%;
+  }
+  .reseauSocial{
+    justify-content: flex-start;
+  }
+  .reseauSocial div img{
+    width: 26px;
+    height: 26px;
+  
+  }
+
+
+
+}
